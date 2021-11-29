@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+}
+.logo{
+    position: relative;
+    left: 25%
+}
+.namePlate{
+    background-color: aqua;
+}
