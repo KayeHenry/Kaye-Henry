@@ -2,6 +2,7 @@ h1{
     text-align: center;
 }
 .logo{
+    width: 50%;
     position: relative;
     left: 25%
 }
