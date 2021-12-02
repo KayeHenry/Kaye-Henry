@@ -6,6 +6,8 @@ const auto = document.getElementById("auto");
 const autoDesc = document.getElementById("autoDesc");
 const health = document.getElementById("health");
 const healthDesc = document.getElementById("healthDesc");
+const rec = document.getElementById("rec");
+const redDesc = document.getElementById("recDesc");
 home.addEventListener("click", function () {
     if (homeDesc.attributes.length === 2) {
         homeDesc.removeAttribute("hidden")
@@ -47,3 +49,14 @@ health.addEventListener("click", function () {
     }
 
 });
+rec.addEventListener("click", function () {
+    if (recDesc.attributes.length === 2) {
+        recDesc.removeAttribute("hidden")
+        return
+    }
+    if (recDesc.attributes.length === 1) {
+        recDesc.setAttribute("hidden", true)
+    }
+
+});
+
