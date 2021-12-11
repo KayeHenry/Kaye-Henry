@@ -7,7 +7,9 @@ const autoDesc = document.getElementById("autoDesc");
 const health = document.getElementById("health");
 const healthDesc = document.getElementById("healthDesc");
 const rec = document.getElementById("rec");
-const redDesc = document.getElementById("recDesc");
+const recDesc = document.getElementById("recDesc");
+const partner = document.getElementById("partner");
+const partnerDesc = document.getElementById("partnerDesc");
 home.addEventListener("click", function () {
     if (homeDesc.attributes.length === 2) {
         homeDesc.removeAttribute("hidden")
@@ -56,6 +58,16 @@ rec.addEventListener("click", function () {
     }
     if (recDesc.attributes.length === 1) {
         recDesc.setAttribute("hidden", true)
+    }
+
+});
+partner.addEventListener("click", function () {
+    if (partnerDesc.attributes.length === 2) {
+        partnerDesc.removeAttribute("hidden")
+        return
+    }
+    if (partnerDesc.attributes.length === 1) {
+        partnerDesc.setAttribute("hidden", true)
     }
 
 });
